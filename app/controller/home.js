@@ -13,7 +13,7 @@ class HomeController extends Controller {
   async index() {
     const { ctx } = this;
     // console.log(decodeURIComponent(ctx.request.query.url))
-console.log(ctx.req)
+    console.log(ctx.req)
     ctx.body = createNoneStr()+':'+createTimeStamp();
   };
 

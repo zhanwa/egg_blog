@@ -41,15 +41,15 @@ module.exports = appInfo => {
     // database configuration
     client: {
       // host
-      host: 'localhost',
+      host: '47.111.159.39',
       // port
       port: '3306',
       // username
-      user: 'root',
+      user: 'mysql_egg',
       // password
       password: 'zzh1558759687..',
       // database
-      database: 'blog',
+      database: 'mysql_egg',
     },
     // load into app, default is open
     app: true,
