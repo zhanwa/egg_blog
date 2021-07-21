@@ -3,7 +3,7 @@
  * @Autor: zhangzhanhua
  * @Date: 2021-02-19 15:43:29
  * @LastEditors: zhangzhanhua
- * @LastEditTime: 2021-07-20 15:51:38
+ * @LastEditTime: 2021-07-21 17:05:44
  */
 'use strict';
 
@@ -57,7 +57,7 @@ class HomeController extends Controller {
                 type: 'password',
                 allowEmpty: true, // 设置密码为空，作为示例乱写一下。。
             },
-            passwordCommit: 'password'
+            passwordCommit: 'password' 
         }, this.ctx.request.body)
         if (errs) {
             this.ctx.body = {
