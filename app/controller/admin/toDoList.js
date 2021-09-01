@@ -3,7 +3,7 @@
  * @Autor: zhangzhanhua
  * @Date: 2021-07-20 15:54:04
  * @LastEditors: zhangzhanhua
- * @LastEditTime: 2021-07-20 18:09:07
+ * @LastEditTime: 2021-08-13 14:29:25
  */
 'use strict';
 
@@ -30,6 +30,7 @@ class HomeController extends Controller {
         if (this.ctx.query.status) {
             result.data = data.filter(res => res.status == this.ctx.query.status)
         }
+        this.ctx.set('Cache-Control', 'max-age=60');
         this.ctx.body = result;
     }
     async addTodoList() {

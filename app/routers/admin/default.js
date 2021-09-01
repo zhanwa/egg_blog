@@ -3,7 +3,7 @@
  * @Autor: zhangzhanhua
  * @Date: 2021-02-19 16:47:32
  * @LastEditors: zhangzhanhua
- * @LastEditTime: 2021-07-20 17:24:21
+ * @LastEditTime: 2021-08-16 14:24:43
  */
 module.exports = app => {
     const {
@@ -14,6 +14,7 @@ module.exports = app => {
     router.get('/admin/todolist', controller.admin.default.toDoList);
     router.post('/admin/loginTest', controller.admin.default.LoginTest); //登录
     router.post('/admin/login', controller.admin.default.Login); //登录
+    router.post('/admin/postFile', controller.admin.default.postFile); //上传文件
 
     //todolist
      router.get('/toDoList/getTodoList', controller.admin.toDoList.getTodoList);//查询
